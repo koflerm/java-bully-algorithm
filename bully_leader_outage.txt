@@ -1,0 +1,15 @@
+title Bully Leader Outage
+
+Peer3->Peer1: Alive
+Peer3->Peer2: Alive
+note over Peer3: Crash
+note over Peer1: No new Alive messages received
+note over Peer1: New election
+Peer1->Peer2: Election
+Peer2->Peer1: Answer
+Peer2->Peer3: Election
+note over Peer2: No Answer received
+note over Peer2: New Leader
+Peer2->Peer1: Victory
+note over Peer1: Peer2 is now the leader
+

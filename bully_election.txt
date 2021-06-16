@@ -1,0 +1,17 @@
+title Bully Alorithm Project 2
+
+Peer1->Peer2:Election
+Peer1->Peer3: Election
+Peer2-->Peer1:Answer
+Peer2->Peer3:Election
+Peer3-->Peer1:Answer
+Peer3-->Peer2:Answer
+note over Peer3: No peers with higher ID
+note over Peer3: Send Victory to all peers
+Peer3->Peer1:Victory
+note over Peer1: Peer3 is now the leader
+Peer3->Peer2:Victory
+note over Peer2: Peer3 is now the leader
+Peer3->Peer1:Alive
+Peer3->Peer2:Alive
+
